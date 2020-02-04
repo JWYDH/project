@@ -18,11 +18,11 @@ public class LoginserverApplication implements CommandLineRunner {
 
     public static void main(String[] args) {
         SpringApplication.run(LoginserverApplication.class, args);
-        logger.info("登陆服务器启动");
     }
 
     @Override
     public void run(String... args) throws Exception {
+        logger.info("登陆服务器启动...");
         listenServer.run(8080);
     }
 }
