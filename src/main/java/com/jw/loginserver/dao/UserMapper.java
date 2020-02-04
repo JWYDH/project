@@ -6,5 +6,5 @@ import org.apache.ibatis.annotations.Mapper;
 @Mapper
 public interface UserMapper {
 
-    public User query(Integer id);
+    public User query(Integer userid);
 }

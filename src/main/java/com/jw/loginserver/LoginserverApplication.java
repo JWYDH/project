@@ -23,6 +23,6 @@ public class LoginserverApplication implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-//        listenServer.run(8080);
+        listenServer.run(8080);
     }
 }
