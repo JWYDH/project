@@ -6,6 +6,10 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
+
+import javax.sql.DataSource;
+
+
 @SpringBootTest
 class LoginserverApplicationTests {
 
@@ -14,7 +18,14 @@ class LoginserverApplicationTests {
 	void contextLoads() {
 
 	}
+	@Autowired
+	private DataSource dataSource;
+	@Autowired
+	private UserMapper userMapper;
 
-
-
+	@Test
+	void test() {
+		User user=userMapper.query(1);
+		System.out.print(user);
+	}
 }

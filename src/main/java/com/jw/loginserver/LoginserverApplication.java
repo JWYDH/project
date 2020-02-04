@@ -1,16 +1,12 @@
 package com.jw.loginserver;
 
 import com.jw.loginserver.controller.ListenServer;
-import com.jw.loginserver.dao.User;
-import com.jw.loginserver.dao.UserMapper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-
-import java.io.InputStream;
 
 @SpringBootApplication
 public class LoginserverApplication implements CommandLineRunner {
@@ -27,6 +23,6 @@ public class LoginserverApplication implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        listenServer.run(8080);
+//        listenServer.run(8080);
     }
 }
